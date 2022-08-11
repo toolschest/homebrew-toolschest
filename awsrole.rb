@@ -9,7 +9,7 @@ class Awsrole < Formula
 
   on_macos do
     url "https://github.com/toolschest/awsrole/releases/download/v1.0/awsrole_1.0_darwin_all.tar.gz"
-    sha256 "bf68818e2fab79253fcecc97b03cb3f73aa8377fea72eaba0bbdaedddb8f839a"
+    sha256 "d0e0f8ad3bfcca9113ca1b101246e4da3e35338afb664437243105cd780080b0"
 
     def install
       bin.install "awsrole"
@@ -19,7 +19,7 @@ class Awsrole < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/toolschest/awsrole/releases/download/v1.0/awsrole_1.0_linux_arm64.tar.gz"
-      sha256 "c62164019c49d23968b713886ed352f4d4202ade388f91ee6f2cb0090fe0074c"
+      sha256 "6cb756988c99901a64a6d576bd624e4b3331ee8caab2e36d1c0643264cd0447e"
 
       def install
         bin.install "awsrole"
@@ -27,7 +27,7 @@ class Awsrole < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/toolschest/awsrole/releases/download/v1.0/awsrole_1.0_linux_amd64.tar.gz"
-      sha256 "c322cf410a45404fb011e7bfa2ff204b937f3a9f3cb26814080e57d3bfa644f8"
+      sha256 "3fa6148df6d7cc24497b5ab6140184196812a4af07bda8f72ff56e1697a74a14"
 
       def install
         bin.install "awsrole"
